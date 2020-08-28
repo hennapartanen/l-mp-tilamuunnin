@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="viewport" content="widht=device-widht, initial-scale=1.0">
+  <title> Lämpötilamuunnin </title>
+</head>
+<body>
+<H1>Lämpötilamuunnin</H1>
+
+    
+    <label for="temp">Ilmoita lämpötila ja valitse lämpötilamuunnin</label> <br>
+    <input name="temp" id=temp type="number">
+   
+    
+    <select name="temp_diff" id="temp_diff">
+      <option value="CFK"> Celsius -> Fahrenheit ja Kelvin</option>
+      <option value="FCK"> Fahrenheit -> Celsius ja Kelvin</option> 
+      <option value="KFC"> Kelvin -> Celsius ja Fahrenheit</option>
+    </select> 
+
+  
+
+<button onclick="lasketemp()">muunna</button>
+
+<p> Vastaus: <span id="resultContainer"></span> </p>
+
+<script src="kissa.js"></script>
+
+
+</body>
+</html>
